@@ -30,6 +30,7 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 9999;
 }
   
 .name {
@@ -201,5 +202,19 @@ a {
     .btn_cv {
       padding: 10px;
     }
+  }
+}
+
+.wrapper {
+  padding: 70px 0 0 0;
+}
+@media (max-width: 1024px) {
+  .wrapper{
+    padding: 70px 0 0 100px;
+  }
+} 
+@media (max-width: 767px) {
+  .wrapper{
+    padding: 70px 0 70px 0;
   }
 }

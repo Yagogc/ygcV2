@@ -1,0 +1,26 @@
+<section id="cd-timeline" class="cd-container">
+
+		<div *ngFor="let work of works" class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+			</div>
+
+			<div class="cd-timeline-content">
+				<h2>{{work.company}}</h2>
+        <div class="timeline-content-info">
+          <span class="timeline-content-info-title">
+            <i class="fa fa-certificate" aria-hidden="true"></i>
+            {{work.title}}
+          </span>
+          <span class="timeline-content-info-date">
+            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+            {{work.date.start}} - {{work.date.end}}
+          </span>
+        </div>
+				<p>{{work.description}}</p>
+        <ul class="content-skills">
+        <li *ngFor="let tech of work.techs">{{tech}}</li>
+        </ul>
+			</div> 
+		</div> 
+
+	</section> 
