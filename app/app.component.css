@@ -19,7 +19,8 @@ a {
   position: relative;
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 9999; }
 
 .name {
   display: none; }
@@ -145,7 +146,28 @@ a {
     border-top: 1px #1A2227 solid; }
     .navigation .navul {
       width: 100%; }
+      .navigation .navul li {
+        padding-top: 16px;
+        transition: all 0.5s ease; }
+        .navigation .navul li .nav_text {
+          font-size: 0;
+          transition: font-size 0.5s ease; }
+      .navigation .navul li:hover {
+        padding-top: 10px; }
+        .navigation .navul li:hover .nav_text {
+          font-size: 16px; }
   .cv {
     width: 90px; }
     .cv .btn_cv {
       padding: 10px; } }
+
+.wrapper {
+  padding: 70px 0 0 0; }
+
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 70px 0 0 100px; } }
+
+@media (max-width: 767px) {
+  .wrapper {
+    padding: 70px 0 70px 0; } }
