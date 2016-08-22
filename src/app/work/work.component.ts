@@ -28,7 +28,7 @@ export class WorkComponent implements OnInit {
       title: "Front End Developer",
       date: {
         start: "Feb 2016",
-        end: "Feb 2106"
+        end: ""
       },
       description: "Designing and developing a new one page application for the company.",
       techs: ["HTML5", "CSS3", "Javascript", "jQuery", "Bootstrap", "SVGs"]
