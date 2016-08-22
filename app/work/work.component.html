@@ -13,7 +13,8 @@
           </span>
           <span class="timeline-content-info-date">
             <i class="fa fa-calendar-o" aria-hidden="true"></i>
-            {{work.date.start}} - {{work.date.end}}
+            <span [hidden]="work.date.end">{{work.date.start}}</span>
+            <span [hidden]="!work.date.end">{{work.date.start}} - {{work.date.end}}</span>
           </span>
         </div>
 				<p>{{work.description}}</p>
