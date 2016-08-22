@@ -60,7 +60,9 @@ Main components
   .cd-timeline-block:first-child {
     margin-top: 0; }
   .cd-timeline-block:last-child {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .cd-timeline-block:not(:first-child) {
+    margin-top: -130px; } }
 
 .cd-timeline-img {
   position: absolute;
@@ -80,10 +82,7 @@ Main components
     height: 30px;
     left: 50%;
     margin-left: -15px;
-    margin-top: 15px;
-    /* Force Hardware Acceleration in WebKit */
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden; } }
+    margin-top: 8.5px; } }
 
 .cd-timeline-content {
   position: relative;
@@ -111,14 +110,19 @@ Main components
   .cd-timeline-content .content-skills {
     font-size: 12px;
     padding: 0;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
     .cd-timeline-content .content-skills li {
       background: #40484D;
       border-radius: 2px;
       display: inline-block;
       padding: 2px 10px;
       color: rgba(255, 255, 255, 0.7);
-      margin: 3px 2px; }
+      margin: 2px 2px;
+      text-align: center;
+      flex-grow: 1; }
 
 .cd-timeline-content:after {
   content: "";
@@ -128,7 +132,7 @@ Main components
 .cd-timeline-content h2 {
   color: rgba(255, 255, 255, 0.9);
   margin-top: 0;
-  margin-bottom: 5px; }
+  margin-bottom: 10px; }
 
 .cd-timeline-content p, .cd-timeline-content .cd-date {
   color: rgba(255, 255, 255, 0.7);
@@ -155,7 +159,7 @@ Main components
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
     font-size: 20px;
-    font-size: 1.25rem; }
+    font-size: 1.5rem; }
   .cd-timeline-content p {
     font-size: 16px;
     font-size: 1rem; }
